@@ -3,7 +3,7 @@ name: Check ARM Templates
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   validate:
