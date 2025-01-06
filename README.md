@@ -7,6 +7,7 @@
 4. [Property name formatting](#Property-name-formatting)
 
 
+
 ### Usage
 
 1. In the root of the applications repository, create a new directory named `azure`
