@@ -12,6 +12,7 @@
 
 1. In the root of the applications repository, create a new directory named `azure`
 
+
 2. Within the directory Create a new template named `template.json`
 
 
