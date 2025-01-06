@@ -59,6 +59,7 @@
 
 4. After the pull request is approved and the branch merged to master, delete the branch you made.
 
+
 ## Resource naming and parameter metadata description properties
 
 Reduce the number of top-level parameters needed by setting the Azure resource names with variables:
