@@ -20,6 +20,7 @@ jobs:
 
     - name: Install Checkov
       run: pip install checkov
+      continue-on-error: true
 
     - name: Run Checkov
       run: checkov -d .
