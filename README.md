@@ -6,6 +6,7 @@
 3. [Resource naming and parameter metadata description properties](#Resource-naming-and-parameter-metadata-description-properties)
 4. [Property name formatting](#Property-name-formatting)
 
+
 ### Usage
 
 1. In the root of the applications repository, create a new directory named `azure`
