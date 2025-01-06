@@ -23,3 +23,11 @@ jobs:
 
     - name: Run Checkov
       run: checkov -d .
+
+    - name: Install ARM Template Toolkit
+      run: |
+        npm install -g @microsoft/arm-ttk
+
+    - name: Run ARM Template Toolkit
+      run: |
+        arm-ttk/arm-ttk.ps1 -TemplatePath ./templates/function-app.json
