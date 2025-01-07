@@ -82,6 +82,7 @@
       "http20Enabled": "[parameters('http20Enabled')]",
       "ftpsState": "[parameters('ftpsState')]"
     },
+    
     "alwaysOnDisabledConfigOption": {
       "alwaysOn": false,
       "appSettings": "[parameters('functionAppAppSettings')]",
