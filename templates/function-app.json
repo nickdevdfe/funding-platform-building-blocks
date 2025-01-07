@@ -12,6 +12,7 @@
     "appServicePlanResourceGroup": {
       "type": "string"
     },
+    
     "functionAppAppSettings": {
       "type": "array",
       "defaultValue": []
