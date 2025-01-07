@@ -22,6 +22,7 @@
       "type": "array",
       "defaultValue": []
     },
+    
     "customHostName": {
       "type": "string",
       "defaultValue": ""
