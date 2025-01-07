@@ -5,6 +5,7 @@
     "functionAppName": {
       "type": "string"
     },
+    
     "appServicePlanName": {
       "type": "string"
     },
