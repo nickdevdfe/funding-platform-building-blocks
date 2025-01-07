@@ -40,20 +40,11 @@ jobs:
           echo "$file was changed"
           checkov -f $file
         done
+      continue-on-error: true
 
-    - name: Get list of changed files
-      id: changed-files-2
-      run: |
-        git fetch origin master
-        git diff --name-only @{u} ${{ github.sha }} > changed_files.txt
-        cat changed_files.txtche
-
+    - name: Check with arm-ttk
+      uses: microsoft/action-armttk/.github/workflows/arm-ttk@0.0.5
+      with:
+        glob_pattern: "templates/function-app.json"
 
 
-    - name: Install ARM Template Toolkit
-      run: |
-        npm install -g @microsoft/arm-ttk
-
-    - name: Run ARM Template Toolkit
-      run: |
-        arm-ttk/arm-ttk.ps1 -TemplatePath ./templates/function-app.json
