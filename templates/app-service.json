@@ -15,6 +15,7 @@
       "type": "array",
       "defaultValue": []
     },
+
     
     "appServiceConnectionStrings": {
       "type": "array",
