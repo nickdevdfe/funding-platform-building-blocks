@@ -10,6 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Checkov
+      run: pip install checkov
+      continue-on-error: true
+      
     - name: Checkout code
       uses: actions/checkout@v3
       with:
@@ -28,6 +38,7 @@ jobs:
       run: |
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
+          checkov -f %file
         done
 
     - name: Get list of changed files
@@ -35,16 +46,7 @@ jobs:
       run: |
         git fetch origin master
         git diff --name-only @{u} ${{ github.sha }} > changed_files.txt
-        cat changed_files.txt
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Install Checkov
-      run: pip install checkov
-      continue-on-error: true
+        cat changed_files.txtche
 
 
 
