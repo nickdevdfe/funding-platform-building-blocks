@@ -17,6 +17,7 @@
       "type": "array",
       "defaultValue": []
     },
+    
     "functionAppConnectionStrings": {
       "type": "array",
       "defaultValue": []
