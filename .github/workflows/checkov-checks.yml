@@ -13,6 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Get list of changed files
+      id: changed-files
+      run: |
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed_files.txt
+        cat changed_files.txt
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
