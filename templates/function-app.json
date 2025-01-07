@@ -28,6 +28,7 @@
       "type": "string",
       "defaultValue": ""
     },
+    
     "certificateThumbprint": {
       "type": "string",
       "defaultValue": "",
