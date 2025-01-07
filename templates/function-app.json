@@ -5,24 +5,30 @@
     "functionAppName": {
       "type": "string"
     },
+    
     "appServicePlanName": {
       "type": "string"
     },
+    
     "appServicePlanResourceGroup": {
       "type": "string"
     },
+    
     "functionAppAppSettings": {
       "type": "array",
       "defaultValue": []
     },
+    
     "functionAppConnectionStrings": {
       "type": "array",
       "defaultValue": []
     },
+    
     "customHostName": {
       "type": "string",
       "defaultValue": ""
     },
+    
     "certificateThumbprint": {
       "type": "string",
       "defaultValue": "",
@@ -76,6 +82,7 @@
       "http20Enabled": "[parameters('http20Enabled')]",
       "ftpsState": "[parameters('ftpsState')]"
     },
+    
     "alwaysOnDisabledConfigOption": {
       "alwaysOn": false,
       "appSettings": "[parameters('functionAppAppSettings')]",
@@ -117,6 +124,7 @@
         "[resourceId('Microsoft.Web/sites', parameters('functionAppName'))]"
       ]
     },
+    
     {
       "type": "Microsoft.Web/sites/config",
       "condition": "[greater(length(parameters('subnetResourceId')), 0)]",

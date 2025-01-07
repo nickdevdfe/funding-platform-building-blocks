@@ -6,9 +6,12 @@
 3. [Resource naming and parameter metadata description properties](#Resource-naming-and-parameter-metadata-description-properties)
 4. [Property name formatting](#Property-name-formatting)
 
+
+
 ### Usage
 
 1. In the root of the applications repository, create a new directory named `azure`
+
 
 2. Within the directory Create a new template named `template.json`
 
@@ -59,9 +62,11 @@
 
 4. After the pull request is approved and the branch merged to master, delete the branch you made.
 
+
 ## Resource naming and parameter metadata description properties
 
 Reduce the number of top-level parameters needed by setting the Azure resource names with variables:
+
 
 1. Set the top-level ```resourceEnvironmentName``` and ```serviceName``` parameters as follows, adding a metadata description property to all top-level parameters:
 
