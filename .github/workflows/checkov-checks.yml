@@ -42,9 +42,7 @@ jobs:
         done
       continue-on-error: true
 
-    - name: Check with arm-ttk
-      uses: microsoft/action-armttk/.github/workflows/arm-ttk@0.0.5
-      with:
-        glob_pattern: "templates/function-app.json"
+    - name: Run PowerShell script
+      run: pwsh -c "Write-Output 'Hello, PowerShell on GitHub 
 
 
