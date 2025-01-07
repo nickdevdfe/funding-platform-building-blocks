@@ -117,6 +117,7 @@
         "[resourceId('Microsoft.Web/sites', parameters('functionAppName'))]"
       ]
     },
+    
     {
       "type": "Microsoft.Web/sites/config",
       "condition": "[greater(length(parameters('subnetResourceId')), 0)]",
