@@ -26,7 +26,7 @@ jobs:
       run: echo "${{ steps.changed-files.outputs.changed_files }}"
 
     - name: Get list of changed files
-      id: changed-files
+      id: changed-files-2
       run: |
         git fetch origin master
         git diff --name-only @{u} ${{ github.sha }} > changed_files.txt
